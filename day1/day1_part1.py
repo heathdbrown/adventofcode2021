@@ -17,7 +17,7 @@ def islarger(prev, new):
 
 def main():
     with open('input', 'r') as file:
-        data = list(map(int, file.readlines()))
+        data = [int(line) for line in file.readlines()]
 
     increased = []
     decreased = []
