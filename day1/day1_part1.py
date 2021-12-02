@@ -6,16 +6,6 @@
 
 
 def islarger(prev, new):
-    '''
-    Parameters
-    ----------
-    prev: int
-    new: int
-
-    Returns:
-    -------
-    bool
-    '''
     if prev <= new:
         print("Decreased")
         return False
