@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def part1():
-    pass
+    print("part1")
 
 def part2():
     pass
