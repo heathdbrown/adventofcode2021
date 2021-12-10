@@ -9,17 +9,17 @@ def parse_file(file_name):
 
 def fuel_consumption(pos, movement):
     move = pos - movement
-    return abs(move)*(abs(move)+1)/2
+    return abs(move)*(abs(move)+1)//2
 
 def main():
     data = parse_file('input')
     crabs = len(data)
     sum_positions = sum(data)
-    avg_position = round(sum_positions / crabs)
+    avg_position = round(sum_positions // crabs)
     median_position = statistics.median(sorted(data))
     print(avg_position)
     print(sum_positions / crabs)
-    fuel_used = sum([fuel_consumption(i, 475) for i in data])
+    fuel_used = sum([fuel_consumption(i, avg_position) for i in data])
     print(fuel_used)
 
 
