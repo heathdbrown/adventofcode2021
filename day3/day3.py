@@ -6,8 +6,8 @@ from collections import Counter
 # gamma_rate -> binary --> most common bit --> decimal
 # epsilon_rate --> binary --> least common bit --> decimal
 
-def parse_file():
-    with open('input', 'r') as file:
+def parse_file(in_file):
+    with open(in_file, 'r') as file:
         #data = [tuple(int(bit) for bit in line.strip()) for line in file]
 
         # output: list of strings [ '1000001', '100001' ]
@@ -62,8 +62,8 @@ def part2(data):
 
 
 def main():
-    data = parse_file()
-    #part1(data)
+    data = parse_file('input')
+    part1(data)
     part2(data)
 
 if __name__ == "__main__":
